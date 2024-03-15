@@ -27,3 +27,7 @@ let three = lessThan100(3, 77); // Output: true
 console.log(first); // Output: true
 console.log(second); // Output: false
 console.log(three); // Output: true
+
+// An arrow function is a shorthand syntax for function expressions.
+const lessThanHundred = (a, b) => (a + b) < 100
+console.log(lessThanHundred(12,450));
