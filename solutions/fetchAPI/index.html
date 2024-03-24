@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        background: url(https://source.unsplash.com/1600x900/?weather) no-repeat
+          center center;
+        place-items: center;
+        height: 100vh;
+      }
+
+      .weather-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+      }
+
+      #location {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+
+      #temperature {
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+
+      #description {
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-card">
+        <h2 id="location">Loading...</h2>
+        <p id="temperature">Temperature: --°C</p>
+        <p id="description">Description: --</p>
+      </div>
+    </div>
+
+    <script src="fetchAPI.js"></script>
+  </body>
+</html>
