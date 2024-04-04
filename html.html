@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    // Write code to create a new HTML element dynamically using JavaScript, set its attributes, and append it to the DOM.
+
+    let div = document.createElement('div')
+    div.innerHTML = "HI"
+    div.setAttribute("class", "add")
+    document.body.appendChild(div)
+
+    class Car  {
+      constructor(engine, wheels, brakes) {
+        this.engine = engine
+        this.wheels = wheels
+        this.brakes = brakes
+      }
+    }
+
+    let honda = new Car(5.5, "honda", 'auto brakes')
+    console.log(honda());
+  </script>
+</body>
+</html>
